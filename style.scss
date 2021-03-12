@@ -42,8 +42,9 @@ a:hover {
 }
 
 .bloc .container {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 2px solid red;
 }
 
 .bloc-lg {
@@ -292,6 +293,7 @@ a:hover {
 .navbar {
   margin-bottom: 0;
   z-index: 1;
+  border: 2px solid blue;
 }
 
 .navbar-brand {
@@ -371,6 +373,7 @@ a:hover {
     right: 20px;
     transform: translate(0, -50%);
     -webkit-transform: translateY(-50%);
+    padding-right: 1rem;
   }
   .nav > li .dropdown-menu a,
   .nav > li .dropdown-menu a:hover {
@@ -841,8 +844,8 @@ h4 {
 
 @media (max-width: 1024px) {
   .bloc {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .bloc.full-width-bloc,
   .bloc-tile-2.full-width-bloc .container,
@@ -875,9 +878,9 @@ h4 {
 }
 
 @media (max-width: 991px) {
-  .container {
-    width: 100%;
-  }
+  /*.container {
+    //width: 100%;
+  }*/
   .b-parallax {
     background-attachment: scroll;
   }
@@ -928,8 +931,8 @@ h4 {
     float: none !important;
   }
   .navbar.row {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: -15px;
+    margin-right: -15px;
   }
   .site-navigation {
     position: inherit;

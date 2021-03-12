@@ -1429,7 +1429,8 @@ figure {
 }
 
 img {
-    vertical-align: middle
+    vertical-align: middle;
+    border: 2px solid purple;
 }
 
 .carousel-inner>.item>a>img,
@@ -1437,7 +1438,6 @@ img {
 .img-responsive,
 .thumbnail a>img,
 .thumbnail>img {
-    display: block;
     max-width: 100%;
     height: auto
 }
@@ -1985,11 +1985,12 @@ pre code {
     padding-left: 15px;
     margin-right: 0;
     margin-left: 0;
+    border: 2px solid red;
 }
 
 @media (min-width:768px) {
     .container {
-        width: 750px
+        width: 100%
     }
 }
 
@@ -5108,7 +5109,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
         display: block !important;
         height: auto !important;
         padding-bottom: 0;
-        overflow: visible !important
+        overflow: visible !important;
+        border: 2px solid green;
     }
     .navbar-collapse.in {
         overflow-y: visible
