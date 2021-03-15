@@ -41,7 +41,6 @@ a:hover {
 .bloc .container {
   padding-left: 15px;
   padding-right: 15px;
-  border: 2px solid red;
 }
 
 .bloc-lg {
@@ -290,7 +289,6 @@ a:hover {
 .navbar {
   margin-bottom: 0;
   z-index: 1;
-  border: 2px solid blue;
 }
 
 .navbar-brand {
