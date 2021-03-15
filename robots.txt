@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://valentineponvilleoc.github.io/ValentinEponville_4_040321/sitemap.xml
