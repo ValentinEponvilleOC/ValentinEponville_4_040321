@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "./variables.scss"; 
 
 body {
   margin: 0;
@@ -12,7 +12,7 @@ body {
 a,
 button {
   transition: all .3s ease-in-out;
-  outline: none !important;
+  //outline: none;
 }
 
 a:hover {
@@ -341,7 +341,9 @@ a:hover {
 
 .navbar-toggle {
   margin: 10px 10px 0 0;
-  border: 0px;
+  //border: 2px solid red;
+  width: 125px;
+  height: 25px;
 }
 
 .navbar-toggle:hover {
@@ -438,9 +440,9 @@ nav .caret {
   float: right;
 }
 
-.row > h2 {
-  background: black;
-}
+/*.row > h2 {
+  background: rgba(0, 0, 0, 0.5);
+}*/
 
 .mg-md {
   margin-top: 10px;
@@ -468,9 +470,9 @@ nav .caret {
   background: rgba(0, 0, 0, 0.3);
 }
 
-button {
+/*button {
   outline: none !important;
-}
+}*/
 
 .btn-rd {
   border-radius: 40px;
@@ -659,7 +661,7 @@ label,
 a {
   font-family: "helvetica";
   font-weight: 400;
-  color: black !important;
+  color: black;
 }
 
 .container {
@@ -709,15 +711,17 @@ p {
 }
 
 .social {
-  max-width: 400px;
+  //max-width: 400px;
+  padding: 50px;
   margin: auto auto auto auto;
-    &:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-    }
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
 }
 
-
+.fa.fa-twitter.icon-md, .fa.fa-facebook.icon-md, .fa.fa-dribbble.icon-md, .fa.fa-instagram.icon-md {
+  transform: scale(1.5);
+}
 
 h2 {
   font-size: 22px;
@@ -750,9 +754,9 @@ h4 {
   margin-top: 24px;
 }
 
-.white {
-  color: black !important;
-}
+/*.white {
+  color: white;
+}*/
 
 .portfolio-thumb {
   margin-bottom: 24px;
@@ -768,7 +772,7 @@ h4 {
 }
 
 .black-background {
-  background-color: rgba(165, 147, 99, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 40px 40px 40px 40px;
 }
 
@@ -917,8 +921,8 @@ h4 {
   h6,
   p,
   #disqus_thread {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .b-parallax {
     background-attachment: scroll;
@@ -1062,4 +1066,55 @@ h4 {
     color: #000000;
   }
 }
+// texte : "L'agence compte en son sein..."
+.col-sm-12.text-center {
+  background-color: rgba($color: #000000, $alpha: 0);
+  & ~ h2 {
+    color: $previous_color !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    }
+}
+
+.mg-md.text-center.tc-white, .description_contact {
+  border: 2px solid yellow;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.col-sm-6 a {
+  display: flex;
+  justify-content: center;
+}
+
+.mg-md.text-center.tc-white {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.col-sm-12:last-child {
+  color: #000000;
+}
+
+// texte : "Nous aimons collaborer..."
+.row.tight-width-whitespace.black-background .col-sm-12 .text-center.white {
+  color: white;
+}
+
+/*@media (max-width: 767px) {
+  .nav-toggle {
+
+  }
+}*/
+
+// bloc avec en fond un smartphone
+#bloc-5-cta {
+  & > .container.bloc-lg {
+  border: 2px solid blue;
+  width: auto;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	<script src="./js/jquery-2.1.0.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
@@ -30,15 +30,15 @@
 
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<img src="img/la-chouette-agence.png" alt="" height="40" />
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+				<img src="img/la-chouette-agence.png" tabindex="0" alt="logo la chouette agence" height="40"/>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1" aria-label="Afficher menu">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="index.html">Accueil</a>
+						<a href="index.html" aria-label="lien menant vers l'accueil">Accueil</a>
 					</li>
 				</ul>
 			</div>
@@ -52,10 +52,10 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="text-center hero-bloc-text" id="h1_page2">
+				<h1 class="text-center hero-bloc-text" id="h1_page2" tabindex="0">
 					Parlons web design !
 				</h1>
-				<p class="text-center mg-lg tight-width-whitespace">
+				<p class="text-center mg-lg tight-width-whitespace" tabindex="0">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 				</p>
@@ -94,13 +94,13 @@
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit" aria-label="Envoyer les informations">
 						Envoyer
 					</button>
 				</form>
 			</div>
 			<div class="col-sm-6">
-				<p>
+				<p tabindex="0">
 					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
 				</p>
 			</div>
@@ -119,54 +119,35 @@
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center white">
+				<p class="text-center white" tabindex="0">
 					La chouette agence - Agence web basée à Lyon.<br>
 				</p>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://twitter.com/home?lang=fr" alt="lien menant vers le compte Twitter"><span class="fa fa-twitter icon-md"></span>Lien Twitter</a>
+							<a class="social" href="https://twitter.com/home?lang=fr" aria-label="lien menant vers le compte Twitteur" alt="lien menant vers le compte Twitter"><span class="fa fa-twitter icon-md"></span></a>	
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.facebook.com/" alt="lien menant vers le compte Facebook"><span class="fa fa-facebook icon-md"></span>Lien Facebook</a>
+							<a class="social" href="https://www.facebook.com/" aria-label="lien menant vers le compte Facebook" alt="lien menant vers le compte Facebook"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://dribbble.com/" alt="lien menant vers le compte Dribbble"><span class="fa fa-dribbble icon-md"></span>Lien Dribbble</a>
+							<a class="social" href="https://dribbble.com/" aria-label="lien menant vers le compte Dribeule" alt="lien menant vers le compte Dribbble"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.instagram.com/" alt="lien menant vers le compte Instagram"><span class="fa fa-instagram icon-md"></span>Lien Instagram</a>
+							<a class="social" href="https://www.instagram.com/" aria-label="lien menant vers le compte Instagram" alt="lien menant vers le compte Instagram"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-4">
-						Partenaires
-							<ul>
-								<li><a href="voiture.com">voiture.com</a></li>
-								<li><a href="pizza.com">pizza.com</a></li>
-								<li><a href="matoiture.com">matoiture.com</a></li>
-								<li><a href="immobilierseo.com">immobilierseo.com</a></li>
-							</ul>		
+					<div class="col-sm-4">	
 					</div>
 					<div class="col-sm-4">
-						Annuaires liste 1
-						<ul>
-							<li><a href="annuaireagence.com">annuaireagence.com</a></li>
-							<li><a href="annuaireseo.com">annuaireseo.com</a></li>
-							<li><a href="annuairemarketing.com">annuairemarketing.com</a></li>
-							<li><a href="123seoture.com">123seo.com</a></li>
-							<li><a href="123site.com">123site.com</a></li>
-							<li><a href="annuairewordpress.com">annuairewordpress.com</a></li>
-							<li><a href="listeagence.com">listeagence.com</a></li>
-							<li><a href="meilleuresagencesparis.com">meilleuresagencesparis.com</a></li>
-							<li><a href="listeseo.com">listeseo.com</a></li>
-						</ul>
 					</div>
 					<div class="col-sm-4">
 					</div>
