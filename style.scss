@@ -342,7 +342,7 @@ a:hover {
 .navbar-toggle {
   margin: 10px 10px 0 0;
   //border: 2px solid red;
-  width: 125px;
+  //width: 125px;
   height: 25px;
 }
 
@@ -445,7 +445,7 @@ nav .caret {
 }*/
 
 .mg-md {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
 }
@@ -667,6 +667,8 @@ a {
 .container {
   //max-width: 1000px;
   max-width: 100%;
+  //margin-left: 25px;
+  //margin-right: 25px;
 }
 
 .hero-bloc-text {
@@ -702,7 +704,7 @@ p {
 }
 
 .cta-hero {
-  margin-top: 22px;
+  //margin-top: 22px;
   color: #FFFFFF !important;
   text-transform: uppercase;
   padding: 12px 28px 12px 28px;
@@ -712,7 +714,7 @@ p {
 
 .social {
   //max-width: 400px;
-  padding: 50px;
+  padding: 25px;
   margin: auto auto auto auto;
   border: 2px solid red;
   display: flex;
@@ -1066,7 +1068,7 @@ h4 {
     color: #000000;
   }
 }
-// texte : "L'agence compte en son sein..."
+// texte : "ligne bouton contact..."
 .col-sm-12.text-center {
   background-color: rgba($color: #000000, $alpha: 0);
   & ~ h2 {
@@ -1080,7 +1082,7 @@ h4 {
 }
 
 .mg-md.text-center.tc-white, .description_contact {
-  border: 2px solid yellow;
+  //border: 2px solid yellow;
   background-color: rgba($color: #000000, $alpha: 0.5);
 }
 
@@ -1094,8 +1096,10 @@ h4 {
   padding-bottom: 30px;
 }
 
-.col-sm-12:last-child {
+.col-sm-12:nth-child(2) {
   color: #000000;
+  //border: 2px solid greenyellow;
+  float: none;
 }
 
 // texte : "Nous aimons collaborer..."
@@ -1117,4 +1121,18 @@ h4 {
   }
 }
 
+.container.bloc-sm {
+  border: 2px solid red;
+}
+
+@media (min-width: 768px) {
+  .container {
+  width: 100%;
+  }
+}
+
+.navbar.row {
+  padding-left: 25px;
+  padding-right: 25px;
+}
 /*# sourceMappingURL=main.css.map */
