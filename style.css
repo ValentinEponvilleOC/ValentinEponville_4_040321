@@ -37,11 +37,10 @@ a:hover {
   position: relative;
 }
 
-.bloc .container {
+/*.bloc .container {
   padding-left: 15px;
   padding-right: 15px;
-}
-
+}*/
 .bloc-lg {
   padding: 100px 50px;
 }
@@ -51,7 +50,7 @@ a:hover {
 }
 
 .bloc-sm {
-  padding: 20px 50px;
+  padding: 20px 0px;
 }
 
 .bg-center,
@@ -336,8 +335,16 @@ a:hover {
 }
 
 .navbar-toggle {
-  margin: 10px 10px 0 0;
+  margin: 0px 0px 0 25px;
+  border: 2px solid orange;
+  width: 125px;
   height: 25px;
+}
+
+@media (max-width: 425px) {
+  .navbar-toggle {
+    margin: 10px 0 0 0;
+  }
 }
 
 .navbar-toggle:hover {
@@ -920,10 +927,10 @@ h4 {
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     float: none !important;
   }
-  .navbar.row {
+  /*.navbar.row {
     margin-left: -15px;
     margin-right: -15px;
-  }
+  }*/
   .site-navigation {
     position: inherit;
     transform: none;
@@ -1106,15 +1113,89 @@ h4 {
   border: 2px solid red;
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .container {
-    width: 100%;
+  width: 100%;
+  }
+}*/
+.navbar.row {
+  /*padding-left: 25px;*/
+  /*padding-right: 25px;*/
+  border: 2px solid grey;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 425px) {
+  .navbar-row {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
+.navbar-header {
+  border: 2px solid purple;
+  display: flex;
+  align-items: center;
+}
+
+/*@media (max-width: 425px) {
+  .navbar-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}*/
+#nav-toggle-1 {
+  margin: 0 0 0 0;
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 2.75rem;
+}
+
+@media (max-width: 425px) {
+  #nav-toggle-1 {
+    position: relative;
+    right: 0rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: auto;
+  }
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#bouton-accueil-contact {
+  border: 2px solid cyan;
+  bottom: 1rem;
+  position: relative;
+  margin-right: 1rem;
+}
+
 .navbar.row {
-  padding-left: 25px;
-  padding-right: 25px;
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
