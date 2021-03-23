@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -90,6 +91,29 @@ a:hover {
 .texture-paper::before {
   background: url("img/texture-paper.png");
   background-size: 280px 280px;
+  z-index: 0;
+}
+
+#texte_prêt {
+  z-index: 2;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  #texte_prêt {
+    font-size: 3rem;
+  }
+}
+
+#texte_lagence {
+  position: relative;
+  width: 700px;
+}
+
+@media (max-width: 645px) {
+  #texte_lagence {
+    width: 100%;
+  }
 }
 
 .b-parallax {
@@ -282,6 +306,16 @@ a:hover {
 
 #bloc-1-hero h1 {
   font-size: 32px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  #bloc-1-hero h1 {
+    font-size: 5rem;
+  }
 }
 
 .navbar {
@@ -694,6 +728,13 @@ p {
   margin: auto auto auto auto;
 }
 
+#bloc-1-hero .tight-width-whitespace, #bloc-1-hero .col-sm-12 {
+  max-width: unset;
+  margin: unset;
+  padding-left: unset;
+  padding-right: unset;
+}
+
 .h1 {
   font-size: 20px;
   font-family: "Open Sans";
@@ -713,6 +754,18 @@ p {
   border: 2px solid red;
   display: flex;
   justify-content: center;
+  /*&__contact {
+    border: 2px solid yellow;
+    width: unset;
+    /*padding: 25px;
+    margin: auto auto auto auto;
+    display: flex;
+    justify-content: center;
+  }
+  &__index {
+    border: 2px solid blue;
+    width: 100%;
+  }*/
 }
 
 .fa.fa-twitter.icon-md, .fa.fa-facebook.icon-md, .fa.fa-dribbble.icon-md, .fa.fa-instagram.icon-md {
@@ -1059,6 +1112,7 @@ h4 {
   display: flex;
   border: 2px solid greenyellow;
   justify-content: center;
+  font-size: 4rem;
 }
 
 #h1_page2 + p {
@@ -1066,6 +1120,12 @@ h4 {
   border: 2px solid yellow;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  #h1_page2 {
+    font-size: 3rem;
+  }
 }
 
 .col-sm-12.text-center {
@@ -1082,7 +1142,7 @@ h4 {
 }
 
 .mg-md.text-center.tc-white, .description_contact {
-  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: black 1px 3px 5px;
 }
 
 .col-sm-6 a {
@@ -1112,6 +1172,12 @@ h4 {
 #bloc-5-cta > .container.bloc-lg {
   border: 2px solid blue;
   width: auto;
+}
+
+#bloc-5-cta > .container.bloc-lg > .row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container.bloc-sm {
@@ -1153,7 +1219,7 @@ h4 {
   align-items: center;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   .navbar-header {
     display: unset;
   }
@@ -1171,6 +1237,11 @@ h4 {
   height: auto;
   position: absolute;
   right: 2.75rem;
+}
+
+#nav-toggle-2 {
+  margin: unset;
+  margin-left: 30px;
 }
 
 /*@media (max-width: 425px) {
@@ -1211,6 +1282,7 @@ a {
   bottom: 1rem;
   position: relative;
   margin-right: 0rem;
+  transition: unset;
 }
 
 @media (max-width: 768px) {
@@ -1227,10 +1299,9 @@ a {
   }
 }
 
-.navbar.row {
+/*.navbar.row {
   margin-left: 15px;
-}
-
+}*/
 #footer-texte-contact {
   display: flex;
   justify-content: center;
@@ -1253,11 +1324,84 @@ a {
   justify-content: unset;
 }
 
-@media (max-width: 468px) {
+@media (max-width: 480px) {
   #navbar-row-index {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+/* bouton accueil page contact */
+@media (max-width: 480px) {
+  #navbar-collapse-contact {
+    padding: 0;
+    overflow-x: hidden;
+    box-shadow: none;
+    width: 100%;
+    display: flex;
+  }
+  #navbar-collapse-contact > .site-navigation.nav.navbar-nav {
+    padding: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    float: right !important;
+    width: 100%;
+  }
+  #navbar-collapse-contact > .site-navigation.nav.navbar-nav > li {
+    margin-top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.05);
+    text-align: left;
+    margin-left: 30px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  #navbar-collapse-contact {
+    padding: unset;
+    overflow-x: unset;
+    box-shadow: unset;
+  }
+  #navbar-collapse-contact > .site-navigation.nav.navbar-nav {
+    padding: unset;
+    border-top: unset;
+  }
+  #navbar-collapse-contact > .site-navigation.nav.navbar-nav > li {
+    margin-top: unset;
+    border-bottom: unset;
+    background: unset;
+    text-align: unset;
+    padding-left: unset;
+    width: unset;
+  }
+}
+
+#logo-index {
+  margin-left: 30px;
+}
+
+.col-sm-3 {
+  width: 25%;
+}
+
+#texte-voici {
+  width: 700px;
+}
+
+@media (max-width: 768px) {
+  #texte-voici {
+    width: 100%;
+  }
+}
+
+#contenu-footer-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#social-index {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
