@@ -24,10 +24,7 @@ a:hover {
   bottom: 0;
   width: 100%;
   z-index: 100000;
-<<<<<<< HEAD
   //border: 2px solid red;
-=======
->>>>>>> 309130d5bfd68d9741aa32354380d5adb1882bdc
   background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
@@ -92,21 +89,13 @@ a:hover {
   background: url("img/texture-paper.webp");
   background-size: 280px 280px;
   z-index: 0;
-<<<<<<< HEAD
   //border: 2px solid red;
-=======
->>>>>>> 309130d5bfd68d9741aa32354380d5adb1882bdc
   //display: flex;
 }
 
 #texte_prêt {
-<<<<<<< HEAD
   position: relative;
   //border: 2px solid red;
-=======
-  z-index: 2;
-  position: relative;
->>>>>>> 309130d5bfd68d9741aa32354380d5adb1882bdc
   //display: flex;
 }
 
@@ -492,13 +481,9 @@ nav .caret {
 .mg-md {
   margin-top: 20px;
   margin-bottom: 20px;
-<<<<<<< HEAD
   width: auto;
   margin-left: 5px;
   margin-right: 5px;
-=======
-  width: 100%;
->>>>>>> 309130d5bfd68d9741aa32354380d5adb1882bdc
 }
 
 .mg-lg {
@@ -577,11 +562,7 @@ nav .caret {
   position: fixed;
   bottom: 20px;
   right: 20px;
-<<<<<<< HEAD
   visibility: hidden;
-=======
-  opacity: 0;
->>>>>>> 309130d5bfd68d9741aa32354380d5adb1882bdc
   z-index: 500;
   transition: all .3s ease-in-out;
 }
@@ -724,14 +705,11 @@ a {
   //margin-right: 25px;
 }
 
-<<<<<<< HEAD
 #row_prêt {
   background-color: rgba($color: black, $alpha: 0.5);
   width: auto;
 }
 
-=======
->>>>>>> 309130d5bfd68d9741aa32354380d5adb1882bdc
 .hero-bloc-text {
   font-size: 38px;
 }
@@ -1189,7 +1167,6 @@ h4 {
   justify-content: center;
 }
 
-<<<<<<< HEAD
 .col-sm-6 {
   //border: 2px solid red;
   &__p {
@@ -1199,8 +1176,6 @@ h4 {
   }
 }
 
-=======
->>>>>>> 309130d5bfd68d9741aa32354380d5adb1882bdc
 .mg-md.text-center.tc-white {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1367,7 +1342,6 @@ a {
   justify-content: center;
 }
 
-<<<<<<< HEAD
 .container.bloc-lg--form {
   //border: 2px solid green;
   display: flex;
@@ -1411,20 +1385,6 @@ a {
   width: 50%;
   }
 }*/
-=======
-#formulaire {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 2rem;
-}
-
-@media (max-width: 320px) {
-  #formulaire {
-  display: unset;
-  }
-}
->>>>>>> 309130d5bfd68d9741aa32354380d5adb1882bdc
 
 #navbar-row-index {
   justify-content: unset;
