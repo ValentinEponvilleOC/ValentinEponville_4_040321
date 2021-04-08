@@ -1258,14 +1258,14 @@ a {
   text-decoration: none;
 }
 
-#bouton-accueil-contact {
+.bouton-accueil-contact {
   bottom: 0rem;
   margin-right: 2rem;
   font-size: 1.5rem;
 }
 
 @media (min-width: 502px) {
-  #bouton-accueil-contact {
+  .bouton-accueil-contact {
     font-size: 1rem;
   }
 }

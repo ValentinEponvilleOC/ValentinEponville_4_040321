@@ -1311,7 +1311,7 @@ a {
     text-decoration: none
 }
 
-#bouton-accueil-contact {
+.bouton-accueil-contact {
     bottom: 0rem;
     margin-right: 2rem;
     //border: 2px solid red;
@@ -1319,7 +1319,7 @@ a {
 }
 
 @media (min-width: 502px) {
-    #bouton-accueil-contact {
+    .bouton-accueil-contact {
         font-size: 1rem;
     }
 }
